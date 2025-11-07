@@ -90,7 +90,7 @@ function Testimonials() {
             transition={{ duration: 0.6 }}
           >
             <p className="text-[#000000] text-2xl md:text-3xl lg:text-4xl font-medium leading-relaxed">
-              Community powered by over 3 million users, and we are just getting started.
+              Trusted by thousands of Nigerian small businesses to simplify their finances and stay tax-ready.
             </p>
           </motion.div>
         </div>

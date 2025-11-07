@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function WaitingList() {
   return (
-    <section className="bg-white py-16 px-6 md:px-12 lg:px-20">
+    <section id="waitinglist" className="bg-white py-16 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
         <motion.div
           className="bg-[#008B8B] rounded-3xl py-12 px-8 md:px-12"
@@ -27,15 +27,17 @@ function WaitingList() {
                   className="w-full px-6 py-3 rounded bg-[#006666] text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white"
                 />
               </div>
-              <div className="relative w-full md:w-96">
-                <input
-                  type="tel"
-                  placeholder="Your phone number"
-                  className="w-full px-6 py-3 pr-32 rounded bg-[#006666] text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white"
-                />
-                <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-white text-[#008B8B] px-8 py-2 rounded font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap">
-                  Join us
-                </button>
+              <div className="w-full md:w-96">
+                <div className="flex flex-col md:flex-row gap-3 md:gap-0 md:relative">
+                  <input
+                    type="tel"
+                    placeholder="Your phone number"
+                    className="w-full px-6 py-3 md:pr-32 rounded bg-[#006666] text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white"
+                  />
+                  <button className="md:absolute md:right-2 md:top-1/2 md:-translate-y-1/2 bg-white text-[#008B8B] px-8 py-2 rounded font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap">
+                    Join us
+                  </button>
+                </div>
               </div>
             </div>
           </div>

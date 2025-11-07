@@ -76,8 +76,13 @@ function KeyBenefits() {
                 <p className="text-[#4D4D4D] text-base leading-relaxed">
                   {benefit.description}
                 </p>
-                <button className="bg-[#008B8B] text-white px-6 py-2 rounded hover:bg-[#334E4E] transition-colors">
-                  See more
+                <button
+                  onClick={() => {
+                    document.getElementById('waitinglist')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="bg-[#008B8B] text-white px-6 py-2 rounded hover:bg-[#334E4E] transition-colors"
+                >
+                  Get Started
                 </button>
               </motion.div>
 
